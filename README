@@ -1,0 +1,17 @@
+This repository contains the source code used to create and run
+http://www.wherearewe.org.uk.
+
+There are two main parts:
+
+* A Django application which receives a list of postcodes and produces a map of
+  the UK, with constituencies coloured from light red to dark red depending on
+  how many postcodes in that constituency were listed.
+
+* A set of Python scripts which process the publicly-available data on UK
+  postcodes and UK constituency boundaries, and insert that data into the
+  Django database.
+
+
+The raw data (postcodes, constituency boundaries) is available from
+https://www.ordnancesurvey.co.uk/oswebsite/opendata/ under the Open Government
+License (http://www.nationalarchives.gov.uk/doc/open-government-licence/).

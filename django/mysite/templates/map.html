@@ -1,0 +1,23 @@
+{% extends 'bootstrap-tmpl.html' %}
+{% block title %}{{ name }}{% endblock %}
+{% block extrahead %}
+        <link rel="stylesheet" href="/static/default-style.css" type="text/css">
+        <link rel="stylesheet" href="/static/style.css" type="text/css">
+{% endblock %}
+{% block main %}
+        <p>{{ name }}</p>
+        <div id="tags">
+            overlay, baselayer, google, osm, openstreetmap, light
+        </div>
+        <p id="shortdesc">
+        </p>
+        <div id="map" class="smallmap"></div>
+        <div id="docs">
+            <p>
+            </p>
+        </div>
+        <script src="/static/lib/OpenLayers.js"></script>
+        <script src="/map/js/{{ name }}"></script>
+        <script src="/static/constituencies.js"></script>
+        <script src="/static/demo.js"></script>
+{% endblock %}

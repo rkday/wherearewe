@@ -1,0 +1,17 @@
+{% extends 'bootstrap-tmpl.html' %}
+
+{% block title %}Input{% endblock %}
+{% block main %}
+<div style="text-align: centre">
+<h1> WhereAreWe - input form</h1>
+
+<form action="/map/create" method="post">
+<p>Please choose a name for your map (letters, numbers and underscores only): <br />
+    <input type="text" name="mapname"/></p>
+<p>Please enter a list of postcodes, one per line:<br />
+    <textarea name="postcodes" cols="10" rows="10"></textarea><br /></p>
+    {% csrf_token %}
+    <input type="submit" value="Create map">
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,3 @@
+[submodule "ostn02python"]
+	path = ostn02python
+	url = https://github.com/TimSC/ostn02python.git
